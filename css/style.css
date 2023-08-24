@@ -1,0 +1,125 @@
+* {
+    color: purple;
+    font-family: georgia;
+    
+    }
+  
+  /* Flexbox */
+  .navbar{
+    display: flex;
+    flex-wrap:wrap;
+    list-style-type: none;
+    padding:14px;
+    background-color: rgba(134,0,179,0.6);
+    font-size:18px;
+  
+  }
+      
+  .navbar li a{
+    color: white;
+    padding:15px;
+    flex-wrap:wrap;
+   }
+  
+  /* HOVER */
+  .navbar li a:hover{
+    background: pink;
+    transition: all 0.5s ease-out;
+    }
+  
+  .background {
+    background-image: url(https://images.unsplash.com/photo-1640177155742-835de7b2a9a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2160&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .header {
+    padding: 15px;
+    text-align: center;
+    font-size: 25px;
+    animation: roll-forward 1s ease 0s 1 normal forwards;
+  }
+  
+  .image {
+    padding: 5px;
+    float:left; 
+  }
+  
+  p {
+    font-size: 18px
+    }
+  
+  .intro{
+   display:flex;
+   flex-wrap:wrap;
+   border-style:solid;
+   padding: 30px;
+   margin: 5px 5px 30px 230px;
+   background-color: rgba(120,120,120,0.2);
+   animation: slide-right 1s ease 0s 1 normal forwards;
+    
+  }
+  
+  .Aboutme{
+    border-style:solid;
+    padding:30px;
+    margin:5px 5px 30px 5px;
+    background-color: rgba(120,120,120,0.2);
+    animation: slide-right 1s ease 0s 1 normal forwards;
+    
+  }
+  
+  .blog{
+    border-style:solid;
+    padding:30px;
+    margin:5px 5px 30px 5px;
+    background-color: rgba(120,120,120,0.2);
+    animation: slide-right 1s ease 0s 1 normal forwards;
+    
+  }
+  
+  h2{
+    text-align:center;
+  }
+  
+  .contact{
+    text-align:center;
+    
+  }
+  
+  .grid{
+    display: grid;
+    grid-template-columns: 80px 80px;
+    padding: 50px;
+  }
+  
+  .icons{
+    border:2px solid purple
+  }
+  
+  /* ANIMATIONS */
+  @keyframes roll-forward {
+      0% {
+          opacity: 0;
+          transform: translateX(-250px) rotate(-200deg);
+      }
+  
+      100% {
+          opacity: 1;
+          transform: translateX(0) rotate(0deg);
+      }
+  }
+  
+  @keyframes slide-right {
+      0% {
+          opacity: 0;
+          transform: translateX(250px);
+      }
+  
+      100% {
+          opacity: 1;
+          transform: translateX(0);
+      }
+  }
+  
+  
